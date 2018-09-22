@@ -1,0 +1,11 @@
+# generates your peer identity mulithash and creates ipfs file structure on your system
+ipfs init
+
+# cat the contents of an ipfs file
+ipfs cat /ipfs/<peer identity multihash>/readme
+
+# .ipfs stores all your ipfs files
+ls -la .ipfs
+
+# adds a regular file to ipfs
+ipfs add bla.txt
