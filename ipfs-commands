@@ -7,5 +7,17 @@ ipfs cat /ipfs/<peer identity multihash>/readme
 # .ipfs stores all your ipfs files
 ls -la .ipfs
 
-# adds a regular file to ipfs
+# create a data store for IPFS
+mkdir ipfs && cd $_
+
+# adds a regular file to ipfs. this will add your file to ipfs and return its multihash handle
+echo "bla bla bla" >> bla.txt  && cat $_
 ipfs add bla.txt
+
+# TIP
+ipfs is content hashed. so if you have a file that has content "bla bla bla" then it will have the exact same multihash 
+as my file above.
+
+# add your computer to ipfs network
+ipfs daemon
+
