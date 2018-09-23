@@ -28,3 +28,10 @@ ipfs daemon
 
 # access from file from ips network
 https://gateway.ipfs.io/ipfs/<multihash for your file>
+
+# to access webui (in case your ipfs server is different from your workstation)
+# make sure you are local forwarding port 5001 for this.   -L 5001:localhost:5001
+http://localhost:5001/webui
+
+# to access images, video, markdown renderer app (in case your ipfs server is different from your workstation)
+# make sure you are local forwarding port 8080 for this.   -L 8080:localhost:8080
