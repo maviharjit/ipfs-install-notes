@@ -23,6 +23,9 @@ ipfs add bla.txt
 ipfs is content hashed. so if you have a file that has content "bla bla bla" then it will have the exact same multihash 
 as my file above.
 
+# ipfs identity
+ipfs id
+
 # add your computer to ipfs network
 ipfs daemon
 
