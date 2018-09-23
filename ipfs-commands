@@ -3,6 +3,12 @@ ipfs init
 
 # cat the contents of an ipfs file
 ipfs cat /ipfs/<peer identity multihash>/readme
+ipfs cat /ipfs/<peer identity multihash>/about
+ipfs cat /ipfs/<peer identity multihash>/help
+ipfs cat /ipfs/<peer identity multihash>/quick-start
+ipfs cat /ipfs/<peer identity multihash>/security-notes
+
+
 
 # .ipfs stores all your ipfs files
 ls -la .ipfs
