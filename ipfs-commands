@@ -29,6 +29,29 @@ ipfs id
 # add your computer to ipfs network
 ipfs daemon
 
+# help
+ipfs help
+
+# stats
+ipfs stats bitswap
+ipfs stats bw   <--- good one. show you bandwidth usage
+ipfs stats repo
+
+# config
+ipfs config edit
+ipfs config show
+
+# swarm
+ipfs swarm addrs
+ipfs swarm peers 
+
+# how many unique peers are you connected to
+ipfs swarm peers | awk -F"/" '{print $3}' | uniq | wc -w
+
+# diagnostics
+ipfs diag cmds
+ipfs diag sys
+
 # access from file from ips network
 https://gateway.ipfs.io/ipfs/<multihash for your file>
 
