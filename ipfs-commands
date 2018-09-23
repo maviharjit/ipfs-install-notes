@@ -8,8 +8,6 @@ ipfs cat /ipfs/<peer identity multihash>/help
 ipfs cat /ipfs/<peer identity multihash>/quick-start
 ipfs cat /ipfs/<peer identity multihash>/security-notes
 
-
-
 # .ipfs stores all your ipfs files
 ls -la .ipfs
 
@@ -19,6 +17,7 @@ mkdir ipfs && cd $_
 # adds a regular file to ipfs. this will add your file to ipfs and return its multihash handle
 echo "bla bla bla" >> bla.txt  && cat $_
 ipfs add bla.txt
+# this will return a multihash for your file 
 
 # TIP
 ipfs is content hashed. so if you have a file that has content "bla bla bla" then it will have the exact same multihash 
@@ -27,3 +26,5 @@ as my file above.
 # add your computer to ipfs network
 ipfs daemon
 
+# access from file from ips network
+https://gateway.ipfs.io/ipfs/<multihash for your file>
